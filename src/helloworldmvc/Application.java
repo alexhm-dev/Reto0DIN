@@ -7,7 +7,7 @@ package helloworldmvc;
 
 /**
  *
- * @author 2dam
+ * @author Alex Hurtado
  */
 public class Application {
 
