@@ -14,7 +14,7 @@ import javax.swing.JFrame;
 public class ViewImpSwing extends JFrame implements View{
 
     @Override
-    public void showGreeting() {
+    public void showGreeting(String greeting) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

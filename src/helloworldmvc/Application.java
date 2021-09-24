@@ -5,6 +5,9 @@
  */
 package helloworldmvc;
 
+import helloworldmvc.model.ModelFactory;
+import helloworldmvc.view.ViewFactory;
+
 /**
  *
  * @author Alex Hurtado
@@ -16,6 +19,9 @@ public class Application {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ModelFactory mf;
+        ViewFactory v;
+
     }
     
 }

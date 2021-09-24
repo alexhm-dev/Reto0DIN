@@ -10,5 +10,5 @@ package helloworldmvc.view;
  * @author Alex Hurtado
  */
 public interface View {
-    public void showGreeting();
+    public void showGreeting(String greeting);
 }

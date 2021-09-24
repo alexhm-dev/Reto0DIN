@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package helloworldmvc.view;
+package helloworldmvc.controller;
+
+import helloworldmvc.model.Model;
+import helloworldmvc.view.View;
 
 /**
  *
  * @author Alex Hurtado
  */
-public class ViewImpTXT implements View{
-
-    @Override
-    public void showGreeting(String greeting) {
-        System.out.println(greeting);
+public class Controller {
+    public void run(Model model, View view){
+       view.showGreeting(model.getGreeting());
     }
-    
 }
