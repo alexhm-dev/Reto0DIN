@@ -5,6 +5,7 @@
  */
 package helloworldmvc;
 
+import helloworldmvc.controller.Controller;
 import helloworldmvc.model.ModelFactory;
 import helloworldmvc.view.ViewFactory;
 
@@ -19,9 +20,10 @@ public class Application {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ModelFactory mf;
-        ViewFactory v;
-
+        Controller controller = new Controller();
+        ModelFactory model = new ModelFactory();
+        ViewFactory view = new ViewFactory();
+        controller.run(model.getModel(), view.getView());
     }
     
 }

@@ -5,17 +5,17 @@
  */
 package helloworldmvc.view;
 
-import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author Alex Hurtado
  */
-public class ViewImpSwing extends JFrame implements View{
+public class ViewImpSwing implements View{
 
     @Override
     public void showGreeting(String greeting) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        JOptionPane.showMessageDialog(null, greeting);
     }
     
 }

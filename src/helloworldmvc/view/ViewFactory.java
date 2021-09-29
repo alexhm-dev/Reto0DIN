@@ -5,16 +5,20 @@
  */
 package helloworldmvc.view;
 
+import java.util.ResourceBundle;
+
 /**
  *
  * @author Alex Hurtado
  */
 public class ViewFactory {
+    private final String PROPERTIES = "helloworldmvc.start";
     private final String TXT_VIEW = "TXT";
     private final String SWING_VIEW = "SWING";
     private final String JAVAFX_VIEW = "JAVAFX";
+    private final String viewType = ResourceBundle.getBundle(PROPERTIES).getString("VIEW_TYPE");
     
-    public View getView(String viewType){
+    public View getView(){
         View view = null;
         if(viewType.equalsIgnoreCase(TXT_VIEW)){
             view = new ViewImpTXT();

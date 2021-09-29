@@ -6,22 +6,31 @@
 package helloworldmvc.view;
 
 import javafx.application.Application;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
 
 /**
  *
  * @author Alex Hurtado
  */
 public class ViewImpFX extends Application implements View{
-
+    private String[] args;
     @Override
     public void showGreeting(String greeting) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        args = new String[1];
+        args[0] = greeting;
+        launch(args);
     }
 
     @Override
-    public void start(Stage stage) throws Exception {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void start(Stage s) throws Exception {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.initStyle(StageStyle.UTILITY);
+        alert.setTitle("Greeting");
+        alert.setHeaderText(null);
+        alert.setContentText(getParameters().getRaw().get(0));
+        alert.showAndWait();
     }
-    
 }
