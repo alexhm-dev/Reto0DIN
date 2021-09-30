@@ -8,7 +8,7 @@ package helloworldmvc.view;
 import java.util.ResourceBundle;
 
 /**
- *
+ * This class constructs the diferent implementations of the View
  * @author Alex Hurtado
  */
 public class ViewFactory {
@@ -16,17 +16,20 @@ public class ViewFactory {
     private final String TXT_VIEW = "TXT";
     private final String SWING_VIEW = "SWING";
     private final String JAVAFX_VIEW = "JAVAFX";
-    private final String viewType = ResourceBundle.getBundle(PROPERTIES).getString("VIEW_TYPE");
-    
+    private final String VIEW = ResourceBundle.getBundle(PROPERTIES).getString("VIEW_TYPE");
+    /**
+     * This method returns a View corresponding to the value of the VIEW_TYPE constant
+     * @return View
+     */
     public View getView(){
         View view = null;
-        if(viewType.equalsIgnoreCase(TXT_VIEW)){
+        if(VIEW.equalsIgnoreCase(TXT_VIEW)){
             view = new ViewImpTXT();
         }
-        if(viewType.equalsIgnoreCase(SWING_VIEW)){
+        if(VIEW.equalsIgnoreCase(SWING_VIEW)){
             view = new ViewImpSwing();
         }
-        if(viewType.equalsIgnoreCase(JAVAFX_VIEW)){
+        if(VIEW.equalsIgnoreCase(JAVAFX_VIEW)){
             view = new ViewImpFX();
         }
         return view;

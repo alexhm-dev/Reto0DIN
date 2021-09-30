@@ -5,10 +5,20 @@
  */
 package helloworldmvc.view;
 
+import org.junit.Test;
+import static org.junit.Assert.*;
+
 /**
- * View interface. It has the signature of the method showGreeting()
+ *
  * @author Alex Hurtado
  */
-public interface View {
-    public void showGreeting(String greeting);
+public class ViewFactoryTest {
+    ViewFactory vf = new ViewFactory();
+    View v = vf.getView();
+    
+    @Test
+    public void testGetView() {
+        assertNotNull(v);
+    }
+    
 }

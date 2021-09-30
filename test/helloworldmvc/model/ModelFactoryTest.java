@@ -5,10 +5,21 @@
  */
 package helloworldmvc.model;
 
+import org.junit.Test;
+import static org.junit.Assert.*;
+
 /**
- * Model interface. It has the signature of the method getGreeting()
+ *
  * @author Alex Hurtado
  */
-public interface Model {
-    public String getGreeting();
+public class ModelFactoryTest {
+    
+   ModelFactory mf = new ModelFactory();
+   Model m = mf.getModel();
+
+    @Test
+    public void testGetModel() {
+        assertNotNull(m);
+    }
+    
 }

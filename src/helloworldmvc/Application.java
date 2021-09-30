@@ -10,12 +10,13 @@ import helloworldmvc.model.ModelFactory;
 import helloworldmvc.view.ViewFactory;
 
 /**
- *
+ * This class starts the application using the main() method
  * @author Alex Hurtado
  */
 public class Application {
 
     /**
+     * This method starts the application
      * @param args the command line arguments
      */
     public static void main(String[] args) {

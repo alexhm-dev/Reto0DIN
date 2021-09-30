@@ -6,11 +6,15 @@
 package helloworldmvc.view;
 
 /**
- *
+ * This class is the implementation of the View that shows a greeting in the terminal.
  * @author Alex Hurtado
  */
 public class ViewImpTXT implements View{
-
+    
+    /**
+     * This method shows the greeting passed as argument in the console.
+     * @param greeting 
+     */
     @Override
     public void showGreeting(String greeting) {
         System.out.println(greeting);

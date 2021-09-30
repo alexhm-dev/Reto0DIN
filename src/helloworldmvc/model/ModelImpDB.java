@@ -15,17 +15,20 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * This class is the implementation of the Model that retrieves the greeting from a data base.
  * @author Alex Hurtado
  */
 public class ModelImpDB implements Model {
     private final String PROPERTIES = "helloworldmvc.start";
-    //private final String DB_DRIVER = ResourceBundle.getBundle(PROPERTIES).getString("DRIVER");
     private final String DB_URL = ResourceBundle.getBundle(PROPERTIES).getString("URL");
     private final String USER = ResourceBundle.getBundle(PROPERTIES).getString("DBUSER");
     private final String PASS = ResourceBundle.getBundle(PROPERTIES).getString("DBPASS");
     private final String QUERY = "SELECT greeting FROM greetings WHERE type = 1";
 
+    /**
+     * This method returns a string that contains the greeting retrieved from a data base.
+     * @return string String with the greeting read from the db.
+     */
     @Override
     public String getGreeting() {
         String greeting = "";
