@@ -1,4 +1,4 @@
-/*
- * Este paquete contiene las classes de la capa visual
+/**
+ * This package contains the classes of the visual layer
  */
 package helloworldmvc.view;

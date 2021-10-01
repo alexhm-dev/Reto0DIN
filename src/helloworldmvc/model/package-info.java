@@ -1,4 +1,4 @@
-/*
- * Este paquete contiene las classes para acceder a datos
+/**
+ * This package contains the classes to access data
  */
 package helloworldmvc.model;

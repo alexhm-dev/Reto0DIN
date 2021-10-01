@@ -1,4 +1,4 @@
-/*
- * Este paquete contiene las clases y las interfaces para el nivel lógico
+/**     
+ * This package contains the classes and the interfaces for the logical level
  */
 package helloworldmvc.controller;
